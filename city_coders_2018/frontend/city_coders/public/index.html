@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#cc324c">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(["init", {
+        appId: "90bf4b20-5f9d-417e-a31b-d89bd798d773",
+        autoRegister: true,
+        notifyButton: {
+          enable: true /* Set to false to hide */
+        }
+      }]);
+    </script>
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/vis.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- javascript libs -->
+    <script type="text/javascript" src="js/libs/leaflet.js"></script>
+    <script type="text/javascript" src="js/libs/leaflet-providers.js"></script>
+    <script type="text/javascript" src="js/libs/vis.js"></script>
+    <script type="text/javascript" src="js/libs/webglheatmap.js"></script>
+
+    <title>city_coders</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but city_coders doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script src="https://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1526040296" />
+    <script src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="js/hmap.js"></script> <!-- ublock blocks heatmap.js ... -->
+    <script type="text/javascript" src="js/playback.js"></script>
+    <!-- <script type="text/javascript" src="js/main.js"></script> -->
+  </body>
+</html>

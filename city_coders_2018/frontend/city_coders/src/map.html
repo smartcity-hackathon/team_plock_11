@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BTS location system</title>
+    <meta name="description" content="BTS location system">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7, user-scalable=0"/>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/vis.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- javascript libs -->
+    <script type="text/javascript" src="js/libs/leaflet.js"></script>
+    <script type="text/javascript" src="js/libs/leaflet-providers.js"></script>
+    <script type="text/javascript" src="js/libs/vis.js"></script>
+    <script type="text/javascript" src="js/libs/webglheatmap.js"></script>
+
+</head>
+<body>
+<div id="map">
+    <div class="leaflet-top leaflet-right">
+		<img id="wind_direction" style='margin-right: 20px; margin-top: 20px; width: 100px; height: 100px; transform: rotate(0deg);' src="img/wind.png" />
+    </div>
+</div>
+<div id="timeline"></div>
+<script type="text/javascript" src="js/hmap.js"></script> <!-- ublock blocks heatmap.js ... -->
+<script type="text/javascript" src="js/playback.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
